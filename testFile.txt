@@ -1,0 +1,5 @@
+Test File Contents
+
+This is for testing and learning Git.
+
+We have used the global and config commands to edit the config files to add name and email.
