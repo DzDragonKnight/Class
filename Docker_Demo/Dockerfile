@@ -9,5 +9,5 @@ RUN chmod +x /bin/assignment.sh
 RUN chmod +rwx -R /bin
 RUN /bin/assignment.sh
 RUN apt update
-RUN apt install nginx  
-RUN start nginx
+RUN apt install -y  nginx  
+RUN service nginx start
