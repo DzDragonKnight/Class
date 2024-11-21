@@ -1,10 +1,13 @@
 FROM ubuntu
 
 
-RUN mkdir /bin
+#RUN mkdir /bin
 
-COPY assignment.sh /bin
+COPY assignment.sh /bin/
 
-CMD chmod +x assignment.sh
-
-CMD ./bin/assignment.sh
+RUN chmod +x /bin/assignment.sh
+RUN chmod +rwx -R /bin
+RUN /bin/assignment.sh
+RUN apt update
+RUN apt install nginx  
+RUN start nginx
